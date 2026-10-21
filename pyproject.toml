@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aea-eeg"
+version = "0.1.0"
+description = "Auditory-inspired electrode attention with source-only nested LOSO evaluation"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.6,<3", "numpy>=1.26,<3", "scipy>=1.11,<2", "scikit-learn>=1.4,<2"]
+
+[tool.setuptools]
+packages = ["aea"]
+py-modules = ["model", "train", "evaluate"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
