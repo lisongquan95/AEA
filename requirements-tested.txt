@@ -1,0 +1,7 @@
+# Direct dependency versions used for CPU synthetic tests, Python 3.12.
+# Not the original paper environment; not a transitive lockfile.
+torch==2.6.0
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+pytest==9.1.1
